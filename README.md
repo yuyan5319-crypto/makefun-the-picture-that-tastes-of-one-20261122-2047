@@ -4,10 +4,11 @@
 [![rank](https://make.fun/badge/the-picture-that-tastes-of-one-20261122-2047/yuyan5319-crypto/makefun-the-picture-that-tastes-of-one-20261122-2047/rank.svg)](https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=the-picture-that-tastes-of-one-20261122-2047)
 [![reward](https://make.fun/badge/the-picture-that-tastes-of-one-20261122-2047/yuyan5319-crypto/makefun-the-picture-that-tastes-of-one-20261122-2047/reward.svg)](https://make.fun/bounty/the-picture-that-tastes-of-one-20261122-2047?utm_source=github&utm_medium=readme&utm_campaign=the-picture-that-tastes-of-one-20261122-2047)
 
-
-One ingredient: honey. An extreme close-up macro photograph of thick golden
-honey dripping in a glossy ribbon from a wooden honey dipper onto golden
-honeycomb, warm amber backlight against a deep dark brown background.
+The brief allows a single ingredient, and this picture spends it all on
+honey: an extreme macro close-up of thick golden honey drawing out in a
+glossy ribbon from a wooden dipper, falling onto golden honeycomb. Warm
+amber backlight glows through the ribbon; the background stays deep dark
+brown so the honey carries the whole frame.
 
 ## Run
 
@@ -15,10 +16,11 @@ honeycomb, warm amber backlight against a deep dark brown background.
 node main.ts
 ```
 
-`main.ts` (Node 22, stdlib only, no dependencies) decodes an embedded
-base64 JPEG, verifies it is a JPEG of at most 1,048,576 bytes and at most
-1024×1024 pixels (parsing the SOF marker for width and height), then writes
-it to `/output/entry.png`.
+`main.ts` runs on Node 22 with the standard library only — no
+dependencies, nothing to install. It decodes the base64 JPEG embedded in
+the file, checks that it is a real JPEG of at most 1,048,576 bytes and at
+most 1024×1024 pixels (the width and height are read from the JPEG's
+Start-of-Frame marker), and writes it to `/output/entry.png`.
 
 Output: a 1024×1024 JPEG, 188,788 bytes — inside the competition's limits.
 
